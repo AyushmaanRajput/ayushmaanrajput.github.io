@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/.github.io/ayushmaanrajput.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/.github.io/ayushmaanrajput.github.io/static/js/main.e827eab9.js",
-    "static/js/787.77e13e6a.chunk.js": "/.github.io/ayushmaanrajput.github.io/static/js/787.77e13e6a.chunk.js",
-    "static/media/logo.svg": "/.github.io/ayushmaanrajput.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/.github.io/ayushmaanrajput.github.io/index.html",
-    "main.073c9b0a.css.map": "/.github.io/ayushmaanrajput.github.io/static/css/main.073c9b0a.css.map",
-    "main.e827eab9.js.map": "/.github.io/ayushmaanrajput.github.io/static/js/main.e827eab9.js.map",
-    "787.77e13e6a.chunk.js.map": "/.github.io/ayushmaanrajput.github.io/static/js/787.77e13e6a.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.bc81b544.js",
+    "static/js/787.77e13e6a.chunk.js": "/static/js/787.77e13e6a.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.bc81b544.js.map": "/static/js/main.bc81b544.js.map",
+    "787.77e13e6a.chunk.js.map": "/static/js/787.77e13e6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e827eab9.js"
+    "static/js/main.bc81b544.js"
   ]
 }
