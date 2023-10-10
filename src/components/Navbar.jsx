@@ -30,7 +30,7 @@ export const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link resume" id="resume-button-1">
+          <a href="/Resume.pdf" className="nav-link resume" id="resume-button-1" download>
             Resume
           </a>
         </li>

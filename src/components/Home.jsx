@@ -9,7 +9,9 @@ export const Home = () => {
         width={200}
         className="home-img"
       />
-      <a href="#" id="resume-link-2">Resume</a>
+      <a href="/Resume.pdf" id="resume-link-2" download>
+        Resume
+      </a>
     </div>
   );
 };
