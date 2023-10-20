@@ -1,0 +1,19 @@
+:root {
+  --text: #ffffff;
+  --background: #0e0e0e;
+  --background-light:#373737;
+  --background-lightest:#414141;
+  --primary: #fdba72;
+  --secondary: #d6d6d6;
+  --accent: #ab7c49;
+
+  /* sizes */
+  --h1: 3.5rem;
+  --h2: 2.5rem;
+  --h3: 1.85rem;
+  --h4: 1.25rem;
+  --h5: 1rem;
+  --p: 0.9rem;
+  --link: 0.85rem;
+  --buttom: 1rem;
+}

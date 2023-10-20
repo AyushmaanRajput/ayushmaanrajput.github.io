@@ -2,20 +2,27 @@ import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
-import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import { JobsTicker } from "./components/Ticker";
+import styled from "styled-components";
+
 function App() {
   return (
-    <div className="App">
+    <CONTAINER className="App">
       <Navbar />
       <Home />
+      <JobsTicker></JobsTicker>
       <About />
-      <Skills />
       <Projects />
       <Contact />
-    </div>
+    </CONTAINER>
   );
 }
+
+const CONTAINER = styled.div`
+  width: min(70rem, 100%);
+  margin-inline: auto;
+`;
 
 export default App;

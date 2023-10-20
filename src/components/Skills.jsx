@@ -1,56 +1,100 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import Ticker from "framer-motion-ticker";
 
 export const Skills = () => {
   return (
-    <div id='skills'>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>HTML</h5>
+    <SKILLS id="skills">
+      <h3>My Stack</h3>
+      <div className="skills-row">
+        <Ticker duration={60} direction={-1}>
+          <div className="skills-card">
+            <img src="/HTML.svg" className="skills-card-img" />
+            <p className="skills-card-name">HTML</p>
+          </div>
+          <div className="skills-card">
+            <img src="/CSS.svg" className="skills-card-img" />
+            <p className="skills-card-name">CSS</p>
+          </div>
+          <div className="skills-card">
+            <img src="/JS.svg" className="skills-card-img" />
+            <p className="skills-card-name">JAVASCRIPT</p>
+          </div>
+          <div className="skills-card">
+            <img src="/GIT.svg" className="skills-card-img" />
+            <p className="skills-card-name">GIT</p>
+          </div>
+          <div className="skills-card">
+            <img src="/Mongo.svg" className="skills-card-img" />
+            <p className="skills-card-name">MongoDB</p>
+          </div>
+          <div className="skills-card">
+            <img src="/Typescript.svg" className="skills-card-img" />
+            <p className="skills-card-name">TypeScript</p>
+          </div>
+        </Ticker>
       </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>CSS</h5>
+      <div className="skills-row">
+        <Ticker duration={60} direction={1} className="container">
+          <div className="skills-card">
+            <img src="/React.svg" className="skills-card-img" />
+            <p className="skills-card-name">REACT</p>
+          </div>
+          <div className="skills-card">
+            <img src="/logos_redux.svg" className="skills-card-img" />
+            <p className="skills-card-name">REDUX</p>
+          </div>
+          <div className="skills-card">
+            <img src="/Node.svg" className="skills-card-img" />
+            <p className="skills-card-name">NODEJS</p>
+          </div>
+          <div className="skills-card">
+            <img src="/Express.svg" className="skills-card-img" />
+            <p className="skills-card-name">EPXRESS</p>
+          </div>
+          <div className="skills-card">
+            <img src="/Mongoose.svg" className="skills-card-img" />
+            <p className="skills-card-name">Mongoose</p>
+          </div>
+          <div className="skills-card">
+            <img src="/Framer.svg" className="skills-card-img" />
+            <p className="skills-card-name">Framer</p>
+          </div>
+        </Ticker>
       </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>JAVASCRIPT</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>GIT</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>RESPONSIVE DESIGN</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>RESTful APIs</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>REACT</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>REDUX</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>NODEJS</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>EPXRESS</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>WIREFRAMING</h5>
-      </div>
-      <div className="skills-card">
-        <img src="" className='skills-card-img'/>
-        <h5 className='skills-card-name'>PROTOTYPING</h5>
-      </div>
-    </div>
-  )
-}
+    </SKILLS>
+  );
+};
+
+const SKILLS = styled.section`
+  grid-area: skills;
+  background: var(--background-light);
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+  }
+  .skills-row {
+    width: 80%;
+    margin-inline: auto;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .skills-card {
+      background: var(--background-lightest);
+      padding: 0.75rem;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-inline: 1rem;
+      img {
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+`;
