@@ -41,7 +41,7 @@ export const Navbar = () => {
             Projects
           </a>
         </li>
-        <li>
+        <li style={{ display: "none" }}>
           <a href="#contact" className="nav-link contact">
             <FontAwesomeIcon icon={faPhoneVolume} className="icon" />
             Contact
@@ -74,7 +74,7 @@ const NAV = styled.nav`
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    li{
+    li {
       /* overflow: hidden; */
     }
   }

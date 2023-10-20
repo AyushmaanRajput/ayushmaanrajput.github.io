@@ -16,9 +16,9 @@ export function JobsTicker() {
   return (
     <>
       <JOBSTICKER>
-        <Reveal>
+        {/* <Reveal>
           <h2>I can <i>*</i>do<i>*</i></h2>
-        </Reveal>
+        </Reveal> */}
         <Ticker duration={60} className="container">
           <Reveal>
             <JOBCARD>
@@ -83,7 +83,7 @@ const JOBSTICKER = styled.div`
 `;
 
 const JOBCARD = styled.div`
-  margin: 2rem 1rem;
+  margin: 1rem;
   letter-spacing: 1px;
   opacity: 0.7;
   font-weight: light;

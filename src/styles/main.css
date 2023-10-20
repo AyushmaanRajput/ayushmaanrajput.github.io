@@ -52,7 +52,7 @@ body {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   background-color: var(--background);
-
+  overflow-x: hidden;
   color: var(--text);
 }
 
@@ -121,6 +121,17 @@ h2 {
   letter-spacing: 2px;
   text-transform: capitalize;
   font-weight: lighter;
+  color: var(--secondary);
+  position: relative;
+}
+h2::after {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: var(--accent);
+  position: absolute;
+  top: 50%;
+  left: 102%;
 }
 h3 {
   font-size: var(--h3);
@@ -133,7 +144,7 @@ h5 {
   font-size: var(--h5);
 }
 
-a {
+a.nav-link {
   /* text-transform:uppercase; */
   letter-spacing: 2px;
   padding: 0.5rem 0.25rem;
@@ -145,12 +156,12 @@ a {
   z-index: 1;
   overflow: hidden !important;
 }
-a:hover {
+a.nav-link:hover {
   transition-delay: 0.5s;
   color: var(--text);
   filter: brightness(200%);
 }
-a::before {
+a.nav-link::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -164,12 +175,12 @@ a::before {
   /* transform: skewX(35deg); */
   transition: 0.5s ease-in;
 }
-a:hover::before {
+a.nav-link:hover::before {
   width: 100%;
 }
 
 i {
   color: var(--primary);
-  font-size: 1.15em;
+  font-size: 1em;
   margin-inline: 0.15em 0.25em;
 }

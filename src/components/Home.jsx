@@ -11,76 +11,81 @@ import styled from "styled-components";
 
 export const Home = () => {
   return (
-    <HOME id="home">
-      <div className="home-content">
-        <Reveal>
-          <span>
-            <FontAwesomeIcon icon={faGlobe} className="icon"></FontAwesomeIcon>
-            Available For Work
-          </span>
-        </Reveal>
-        <Reveal>
-          <h1>
-            I am <span id="user-detail-name">Ayushmaan</span> Rajput<i>.</i> I
-            <i>*</i>Build things for the <i>*</i>Web<i>.</i>
-          </h1>
-        </Reveal>
-        <Reveal>
-          <p id="user-detail-intro">
-            I'm a web developer specializing in building ( & occasionally
-            designing ) robust web applicatoins. I'm focused on delivering,
-            exceptional online experiences.
-          </p>
-        </Reveal>
-        <Reveal>
-          <div className="buttons-container">
-            <Button href="/Resume.pdf" id="resume-button-2" download>
+    <Reveal>
+      <HOME id="home">
+        <div className="home-content">
+          <Reveal>
+            <span className="status">
               <FontAwesomeIcon
-                icon={faDownload}
+                icon={faGlobe}
                 className="icon"
               ></FontAwesomeIcon>
-              Resume
-            </Button>
-            <Button color="var(--secondary)">
-              <FontAwesomeIcon icon={faLaptopFile} className="icon" />
-              Projects
-            </Button>
+              Available For Work
+            </span>
+          </Reveal>
+          <Reveal>
+            <h1>
+              I am <span id="user-detail-name">Ayushmaan</span> Rajput<i>.</i> I
+              Build things for the Web<i>.</i>
+            </h1>
+          </Reveal>
+          <Reveal>
+            <p id="user-detail-intro">
+              I'm a web developer specializing in building ( & occasionally
+              designing ) robust web applicatoins. I'm focused on delivering,
+              exceptional online experiences.
+            </p>
+          </Reveal>
+          <Reveal>
+            <div className="buttons-container">
+              <Button href="/Resume.pdf" id="resume-button-2" download>
+                <FontAwesomeIcon
+                  icon={faDownload}
+                  className="icon"
+                ></FontAwesomeIcon>
+                Resume
+              </Button>
+              <Button color="var(--secondary)">
+                <FontAwesomeIcon icon={faLaptopFile} className="icon" />
+                Projects
+              </Button>
+            </div>
+          </Reveal>
+        </div>
+        <Reveal>
+          <div className="home-img-container">
+            <img
+              src="./ProfilePhoto.png"
+              alt="Profile Image"
+              // width={200}
+              className="home-img"
+            />
+            <div className="backdrop"></div>
           </div>
         </Reveal>
-      </div>
-      <Reveal>
-        <div className="home-img-container">
-          <img
-            src="./ProfilePhoto.png"
-            alt="Profile Image"
-            // width={200}
-            className="home-img"
-          />
-          <div className="backdrop"></div>
-        </div>
-      </Reveal>
-    </HOME>
+      </HOME>
+    </Reveal>
   );
 };
 
 const HOME = styled.section`
-  min-height: 90vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 3rem;
-  margin-bottom: 3rem;
+  padding: 0;
+  /* border: 1px solid red; */
   gap: 1rem;
 
   .home-content {
     width: 60%;
     text-align: left;
-    > span {
+    .status {
       text-transform: uppercase;
       letter-spacing: 2px;
       color: var(--primary);
       opacity: 0.8;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     h1 {
       /* background-color:red; */
@@ -90,7 +95,6 @@ const HOME = styled.section`
       span {
         color: var(--primary);
       }
-     
     }
     p {
       opacity: 0.9;

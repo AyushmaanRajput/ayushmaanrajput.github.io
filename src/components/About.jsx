@@ -15,11 +15,7 @@ export const About = () => {
   return (
     <ABOUT id="about" className="about section">
       <Reveal>
-        <h2>
-          Some Things <i>*</i>
-          <span>About</span>
-          <i>*</i> Me
-        </h2>
+        <h2>Some Things About Me</h2>
       </Reveal>
       <Reveal>
         <div className="about-content">
