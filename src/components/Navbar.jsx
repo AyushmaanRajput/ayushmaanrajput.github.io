@@ -47,33 +47,39 @@ export const Navbar = () => {
             Contact
           </a>
         </li>
-        <li>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-        </li>
-        <li>
-          <a
-            href="/Resume.pdf
-          "
-            className="nav-link resume"
-            title="Download Resume"
-            download
-            id="resume-button-1"
-          >
-            <Button>
-              <FontAwesomeIcon icon={faDownload} className="icon" />
-              Resume
-            </Button>
-          </a>
-        </li>
       </ul>
+      <div>
+        <ul>
+          <li>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li>
+            <a
+              href="/Resume.pdf
+          "
+              className="nav-link resume"
+              title="Download Resume"
+              download
+              id="resume-button-1"
+            >
+              <Button>
+                <FontAwesomeIcon icon={faDownload} className="icon" />
+                Resume
+              </Button>
+            </a>
+          </li>
+        </ul>
+      </div>
     </NAV>
   );
 };
 
 const NAV = styled.nav`
+  width: 80%;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

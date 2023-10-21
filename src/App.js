@@ -10,15 +10,17 @@ import styled from "styled-components";
 
 function App() {
   return (
-    <CONTAINER className="App">
+    <>
       <Navbar />
-      <Home />
-      <JobsTicker></JobsTicker>
-      <About />
-      <Projects />
-      <Contact />
-      <Stats/>
-    </CONTAINER>
+      <CONTAINER className="App">
+        <Home />
+        <JobsTicker></JobsTicker>
+        <About />
+        <Projects />
+        <Contact />
+        <Stats />
+      </CONTAINER>
+    </>
   );
 }
 

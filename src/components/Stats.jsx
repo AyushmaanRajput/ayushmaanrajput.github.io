@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GitHubCalendar from "react-github-calendar";
+import { Reveal } from "./common/Reveal";
 
 export const Stats = () => {
   const selectLastHalfYear = (contributions) => {
@@ -29,42 +30,58 @@ export const Stats = () => {
   }
   return (
     <STATS>
-      <h2>Github Stats</h2>
+      <Reveal>
+        <h2>Github Stats</h2>
+      </Reveal>
       <div className="github-stats">
-        <div className="calender-container">
-          <GitHubCalendar
-            username="AyushmaanRajput"
-            transformData={selectLastHalfYear}
-            className="react-activity-calendar"
-            colorScheme="dark"
-            fontSize={16}
-            blockSize={20}
-            blockMargin={10}
-            blockRadius={4}
-            renderBlock={handleRender}
-            theme={{
-              light: ["#F7E5D2", "#EBC296", "#DFA464", "#D7862F", "#B46D20"],
-              dark: ["#304033", "#10611E", "#1C9030", "#25AF3C", "#69DB7C"],
-            }}
-          />
-        </div>
-        <div className="other-stats">
-          <div id="github-streak-stats" className="github-streak-stats">
-            <img
-              src="https://github-readme-streak-stats.herokuapp.com?user=AyushmaanRajput&theme=slateorange&hide_border=false&border_radius=16&card_width=400"
-              alt="GitHub Streak"
+        <Reveal>
+          <div className="calender-container">
+            <GitHubCalendar
+              username="AyushmaanRajput"
+              transformData={selectLastHalfYear}
+              className="react-activity-calendar"
+              colorScheme="dark"
+              fontSize={16}
+              blockSize={20}
+              blockMargin={10}
+              blockRadius={4}
+              renderBlock={handleRender}
+              theme={{
+                light: ["#F7E5D2", "#EBC296", "#DFA464", "#D7862F", "#B46D20"],
+                dark: ["#304033", "#10611E", "#1C9030", "#25AF3C", "#69DB7C"],
+              }}
             />
           </div>
+        </Reveal>
 
-          <div id="github-stats-card" className="github-stats-card">
+        <div className="other-stats">
+          <Reveal>
+            <div>
+              <img
+                id="github-streak-stats"
+                className="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=AyushmaanRajput&theme=slateorange&hide_border=false&border_radius=16&card_width=400"
+                alt="GitHub Streak"
+              />
+            </div>
+          </Reveal>
+          <Reveal>
+            <div>
+              <img
+                id="github-stats-card"
+                className="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=false&count_private=false&border_radius=16"
+                alt="Github Stats Image"
+              />
+            </div>
+          </Reveal>
+          <div>
             <img
-              src="https://github-readme-stats.vercel.app/api?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=false&count_private=false&border_radius=16"
-              alt="Github Stats Image"
+              id="github-top-langs"
+              className="github-top-langs"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=true&count_private=true&border_radius=16"
             />
           </div>
-        </div>
-        <div id="github-top-langs" className="github-top-langs">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=true&count_private=true&border_radius=16" />
         </div>
       </div>
     </STATS>
@@ -93,8 +110,9 @@ const STATS = styled.section`
     .other-stats {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 1rem;
+      flex-wrap: wrap;
     }
   }
 `;

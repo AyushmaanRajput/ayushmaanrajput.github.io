@@ -121,6 +121,7 @@ const HOME = styled.section`
     }
   }
   .home-img-container {
+    margin-top:-5rem;
     display: flex;
     position: relative;
     display: flex;
