@@ -49,21 +49,21 @@ export const Stats = () => {
           />
         </div>
         <div className="other-stats">
-          <div className="github-streak-stats">
+          <div id="github-streak-stats" className="github-streak-stats">
             <img
               src="https://github-readme-streak-stats.herokuapp.com?user=AyushmaanRajput&theme=slateorange&hide_border=false&border_radius=16&card_width=400"
               alt="GitHub Streak"
             />
           </div>
 
-          <div className="github-stats-card">
+          <div id="github-stats-card" className="github-stats-card">
             <img
               src="https://github-readme-stats.vercel.app/api?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=false&count_private=false&border_radius=16"
               alt="Github Stats Image"
             />
           </div>
         </div>
-        <div className="github-top-langs">
+        <div id="github-top-langs" className="github-top-langs">
           <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=true&count_private=true&border_radius=16" />
         </div>
       </div>

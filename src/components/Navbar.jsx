@@ -41,7 +41,7 @@ export const Navbar = () => {
             Projects
           </a>
         </li>
-        <li style={{ display: "none" }}>
+        <li>
           <a href="#contact" className="nav-link contact">
             <FontAwesomeIcon icon={faPhoneVolume} className="icon" />
             Contact
@@ -60,8 +60,9 @@ export const Navbar = () => {
             className="nav-link resume"
             title="Download Resume"
             download
+            id="resume-button-1"
           >
-            <Button id="resume-button-1">
+            <Button>
               <FontAwesomeIcon icon={faDownload} className="icon" />
               Resume
             </Button>

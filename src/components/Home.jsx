@@ -38,8 +38,13 @@ export const Home = () => {
           </Reveal>
           <Reveal>
             <div className="buttons-container">
-              <a href="/Resume.pdf" title="Download Resume" download>
-                <Button href="/Resume.pdf" id="resume-button-2" download>
+              <a
+                href="/Resume.pdf"
+                title="Download Resume"
+                id="resume-button-2"
+                download
+              >
+                <Button>
                   <FontAwesomeIcon
                     icon={faDownload}
                     className="icon"

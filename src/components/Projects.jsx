@@ -16,7 +16,7 @@ export const Projects = () => {
         <h2>Some of my work</h2>
       </Reveal>
       <div className="projects-container design">
-        <div className="project">
+        <div className="project-card">
           <img src="/FoodDelivery.png" alt="First Design Image" />
           <div className="project-content">
             <h4>Food Delivery App</h4>
@@ -39,7 +39,7 @@ export const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="project">
+        <div className="project-card">
           <img src="/Laundry.png" alt="First Design Image" />
           <div className="project-content">
             <h4>Washers & Dryers Web Design</h4>
@@ -62,7 +62,7 @@ export const Projects = () => {
         </div>
       </div>
       <div className="projects-container development">
-        <div className="project col-2">
+        <div className="project-card col-2">
           <div className="view-project">
             <a
               href="https://warlike-current-5989-gamma.vercel.app/"
@@ -100,7 +100,7 @@ export const Projects = () => {
             <div className="tag">CSS (Styled Components)</div>
           </div>
         </div>
-        <div className="project col-2">
+        <div className="project-card col-2">
           <img src="/Travelo.png" alt="Travelo Project Image" />
           <div className="view-project">
             <a
@@ -234,14 +234,14 @@ const PROJECTS = styled.section`
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     margin-bottom: 4rem;
-    .project.col-2 {
+    .project-card.col-2 {
       grid-column: span 2;
       height: 500px;
       img {
         object-position: bottom;
       }
     }
-    .project {
+    .project-card {
       text-align: left;
       position: relative;
       border-radius: 0.5rem;
@@ -385,14 +385,14 @@ const PROJECTS = styled.section`
         }
       }
     }
-    .project::before {
+    .project-card::before {
       position: absolute;
       content: "";
       inset: 0;
       background-color: var(--background-lightest);
       opacity: 0.1;
     }
-    .project:first-of-type {
+    .project-card:first-of-type {
       border: 4px solid var(--primary);
     }
   }
