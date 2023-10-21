@@ -5,10 +5,18 @@ export const Button = ({
   children,
   onClick,
   title,
+  href,
   color = "var(--primary)",
+  download = false,
 }) => {
   return (
-    <BUTTON color={color} title={title} onClick={onClick}>
+    <BUTTON
+      color={color}
+      title={title}
+      href={href}
+      onClick={onClick}
+      download={download}
+    >
       {children}
     </BUTTON>
   );
@@ -25,8 +33,8 @@ const BUTTON = styled.button`
   font-size: var(--button);
   cursor: pointer;
   position: relative;
+  overflow: hidden !important;
   transition: color 0.5s ease-in, box-shadow 0.5s ease-in;
-  overflow: hidden;
   z-index: 1;
   &:hover {
     transition-delay: 0s, 0.5s;

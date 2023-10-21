@@ -15,30 +15,29 @@ export const Contact = () => {
         href="https://github.com/AyushmaanRajput"
         target="_blank"
         id="contact-github"
-        title="Github Profile"
       >
         <FontAwesomeIcon icon={faGithub} className="contact-icon" />
+        <div className="tooltip">Github</div>
       </a>
       <a
         href="https://www.linkedin.com/in/ayushmaan-rajput-8ba7ab279/"
         target="_blank"
         id="contact-linkedin"
-        title="LinkedIn Profile"
-
       >
         <FontAwesomeIcon icon={faLinkedin} className="contact-icon" />
+        <div className="tooltip">LinkedIn</div>
       </a>
-      <div id="contact-phone" title="Copy Phone Number">
+      <a id="contact-phone">
         <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-      </div>
-
+        <div className="tooltip">Contact</div>
+      </a>
       <a
         id="contact-email"
         href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ayushmaanrajput25feb@gmail.com"
         target="_blank"
-        title="Email At"
       >
         <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+        <div className="tooltip">Gmail</div>
       </a>
       <div className="vl"></div>
     </CONTACT>
@@ -48,7 +47,7 @@ export const Contact = () => {
 const CONTACT = styled.div`
   position: fixed;
   bottom: 0;
-  left: 5%;
+  left: 10%;
   width: 4rem;
   /* height: 10vh; */
   /* background-color: red; */
@@ -59,15 +58,22 @@ const CONTACT = styled.div`
   gap: 0.5rem;
 
   .contact-icon {
-    margin-bottom:0.75rem;
+    margin:0;
+    margin-bottom: 0.5rem;
+    padding:0.25rem;
+  /* border-left:1px solid red; */
     color: var(--secondary);
     font-size: 1.5rem;
+    aspect-ratio:1;
     cursor: pointer;
     /* stroke-width:1px; */
     transition: color 0.2s ease-in;
-    &:hover{
-      color:var(--primary);
+    &:hover {
+      color: var(--primary);
     }
+  }
+  #contact-phone{
+    position: relative;
   }
   .vl {
     height: 15vh;

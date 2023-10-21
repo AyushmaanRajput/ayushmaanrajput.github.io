@@ -5,6 +5,7 @@ import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { JobsTicker } from "./components/Ticker";
+import { Stats } from "./components/Stats";
 import styled from "styled-components";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Stats/>
     </CONTAINER>
   );
 }

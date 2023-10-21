@@ -38,17 +38,24 @@ export const Home = () => {
           </Reveal>
           <Reveal>
             <div className="buttons-container">
-              <Button href="/Resume.pdf" id="resume-button-2" download>
-                <FontAwesomeIcon
-                  icon={faDownload}
-                  className="icon"
-                ></FontAwesomeIcon>
-                Resume
-              </Button>
-              <Button color="var(--secondary)">
-                <FontAwesomeIcon icon={faLaptopFile} className="icon" />
-                Projects
-              </Button>
+              <a href="/Resume.pdf" title="Download Resume" download>
+                <Button href="/Resume.pdf" id="resume-button-2" download>
+                  <FontAwesomeIcon
+                    icon={faDownload}
+                    className="icon"
+                  ></FontAwesomeIcon>
+                  Resume
+                </Button>
+              </a>
+              <a
+                href="#projects
+              "
+              >
+                <Button color="var(--secondary)">
+                  <FontAwesomeIcon icon={faLaptopFile} className="icon" />
+                  Projects
+                </Button>
+              </a>
             </div>
           </Reveal>
         </div>

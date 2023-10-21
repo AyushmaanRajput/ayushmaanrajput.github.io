@@ -48,16 +48,24 @@ export const Navbar = () => {
           </a>
         </li>
         <li>
-          <Button
-            href="/Resume.pdf"
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li>
+          <a
+            href="/Resume.pdf
+          "
             className="nav-link resume"
-            id="resume-button-1"
-            download
             title="Download Resume"
+            download
           >
-            <FontAwesomeIcon icon={faDownload} className="icon" />
-            Resume
-          </Button>
+            <Button id="resume-button-1">
+              <FontAwesomeIcon icon={faDownload} className="icon" />
+              Resume
+            </Button>
+          </a>
         </li>
       </ul>
     </NAV>
