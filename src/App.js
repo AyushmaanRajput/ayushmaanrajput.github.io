@@ -7,19 +7,39 @@ import { Contact } from "./components/Contact";
 import { JobsTicker } from "./components/Ticker";
 import { Stats } from "./components/Stats";
 import styled from "styled-components";
+import { useEffect, useState } from "react";
+import { Loader } from "./components/common/Loader";
 
 function App() {
+  let [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      handleLoaderComplete();
+    }, 6000);
+  }, []);
+
+  const handleLoaderComplete = () => {
+    setLoading(false);
+  };
+
   return (
     <>
-      <Navbar />
-      <CONTAINER className="App">
-        <Home />
-        <JobsTicker></JobsTicker>
-        <About />
-        <Projects />
-        <Contact />
-        <Stats />
-      </CONTAINER>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar />
+          <CONTAINER className="App">
+            <Home />
+            <JobsTicker></JobsTicker>
+            <About />
+            <Projects />
+            <Contact />
+            <Stats />
+          </CONTAINER>
+        </>
+      )}
     </>
   );
 }
