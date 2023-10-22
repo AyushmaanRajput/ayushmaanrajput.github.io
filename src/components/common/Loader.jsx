@@ -148,7 +148,7 @@ export const Loader = () => {
               delay: 4,
             }}
           >
-            Designer
+            Developer
           </motion.h1>
           <motion.h1
             variants={{
