@@ -41,10 +41,10 @@ export const Home = () => {
               <a
                 href="/Resume.pdf"
                 title="Download Resume"
-                id="resume-button-2"
+                id="resume-link-2"
                 download
               >
-                <Button id='resume-link-2'>
+                <Button id="resume-button-2">
                   <FontAwesomeIcon
                     icon={faDownload}
                     className="icon"
@@ -167,7 +167,7 @@ const HOME = styled.section`
     letter-spacing: 4px;
     content: "Ayushmaan";
     position: absolute;
-    top:60%;
+    top: 60%;
     right: -50%;
     opacity: 0.3;
     transform: translateY(-50%) rotate(90deg);

@@ -21,10 +21,20 @@ export const About = () => {
         <div className="about-content">
           <div className="about-card">
             <div className="about-avatar">
-              <img src="/ProfilePhoto.png" alt="Profile Avatar Image" />
+              <img src="/ProfilePhoto.png" alt="Profile" />
             </div>
             <div>
               <h3>Ayushmaan Rajput</h3>
+              <a
+                href="/Resume.pdf"
+                className="nav-link resume"
+                title="Download Resume"
+                id="resume-link-2"
+                download
+                style={{ display: "none" }}
+              >
+                Resume
+              </a>
               <p id="user-detail-intro">
                 I'm a web developer specializing in building ( & occasionally
                 designing ) robust web applicatoins. I'm focused on delivering,

@@ -180,9 +180,9 @@ const OriginalNav = () => {
               className="nav-link resume"
               title="Download Resume"
               download
-              id="resume-button-1"
+              id="resume-link-1"
             >
-              <Button id="resume-link-1">
+              <Button id="resume-button-1">
                 <FontAwesomeIcon icon={faDownload} className="icon" />
                 Resume Button
               </Button>
