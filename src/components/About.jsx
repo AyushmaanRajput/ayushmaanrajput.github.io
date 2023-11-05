@@ -14,7 +14,7 @@ import {
 export const About = () => {
   return (
     <ABOUT id="about" className="about section">
-      <Reveal delay={1.2}>
+      <Reveal delay={1.25}>
         <h2>Some Things About Me</h2>
       </Reveal>
       <Reveal>
