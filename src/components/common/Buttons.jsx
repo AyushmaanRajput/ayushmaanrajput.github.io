@@ -8,9 +8,11 @@ export const Button = ({
   href,
   color = "var(--primary)",
   download = false,
+  id,
 }) => {
   return (
     <BUTTON
+      id={id}
       color={color}
       title={title}
       href={href}

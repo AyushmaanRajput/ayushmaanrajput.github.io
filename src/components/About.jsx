@@ -14,7 +14,7 @@ import {
 export const About = () => {
   return (
     <ABOUT id="about" className="about section">
-      <Reveal>
+      <Reveal delay={1.2}>
         <h2>Some Things About Me</h2>
       </Reveal>
       <Reveal>
@@ -29,32 +29,35 @@ export const About = () => {
                 I'm a web developer specializing in building ( & occasionally
                 designing ) robust web applicatoins. I'm focused on delivering,
                 exceptional online experiences.
-                <br />
-                Let's collaborate to build exceptional web experiences and drive
-                innovation in the digital realm.
+                <br />I am proficient in both Frontend and Backend technologies.
               </p>
             </div>
           </div>
           <div class="about-xp">
-            <div className="xp-card">
-              <h4>Achievements</h4>
-              <p>
-                Created <span>3 Construct Week</span> winning projects at Masai
-                School.
-              </p>
-            </div>
-            <div className="xp-card">
-              <h4>Certification</h4>
-              <p>
-                Completed <span>2 Full Courses</span> on FreeCodeCamp.org
-              </p>
-            </div>
+            <Reveal delay={1.6}>
+              <div className="xp-card">
+                <h4>Achievements</h4>
+                <p>
+                  Created <span>3 Construct Week</span> winning projects at
+                  Masai School.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={1.8}>
+              <div className="xp-card">
+                <h4>Certification</h4>
+                <p>
+                  Completed <span>2 Full Courses</span> on FreeCodeCamp.org
+                </p>
+              </div>
+            </Reveal>
           </div>
           <div className="about-socials">
-            <motion.div
-              initial={{ opacity: 0, translateY: 50 }}
-              animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.5, delay: 2 }}
+            <Reveal
+              // initial={{ opacity: 0, translateY: 50 }}
+              // animate={{ opacity: 1, translateY: 0 }}
+              // transition={{ duration: 0.5, delay: 2 }}
+              delay={2.4}
               className="social-card"
             >
               <FontAwesomeIcon
@@ -62,47 +65,44 @@ export const About = () => {
                 icon={faInstagram}
               ></FontAwesomeIcon>
               <p>Instagram</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateY: 50 }}
-              animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.5, delay: 2.2 }}
-              className="social-card"
-            >
+            </Reveal>
+            <Reveal className="social-card" delay={2.6}>
               <FontAwesomeIcon
                 className="icon"
                 icon={faGithub}
               ></FontAwesomeIcon>
               <p>Github</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateY: 50 }}
-              animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.5, delay: 2.4 }}
+            </Reveal>
+            <Reveal
+              // initial={{ opacity: 0, translateY: 50 }}
+              // animate={{ opacity: 1, translateY: 0 }}
+              // transition={{ duration: 0.5, delay: 2.4 }}
               className="social-card"
+              delay={2.8}
             >
               <FontAwesomeIcon
                 className="icon"
                 icon={faDribbble}
               ></FontAwesomeIcon>
               <p>Dribbble</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, translateY: 50 }}
-              animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.5, delay: 2.6 }}
+            </Reveal>
+            <Reveal
+              // initial={{ opacity: 0, translateY: 50 }}
+              // animate={{ opacity: 1, translateY: 0 }}
+              // transition={{ duration: 0.5, delay: 2.6 }}
               className="social-card"
+              delay={3}
             >
               <FontAwesomeIcon
                 className="icon"
                 icon={faLinkedinIn}
               ></FontAwesomeIcon>
               <p>LinkedIn</p>
-            </motion.div>
+            </Reveal>
           </div>
         </div>
       </Reveal>
-      <Reveal>
+      <Reveal delay={2}>
         <Skills></Skills>
       </Reveal>
     </ABOUT>
@@ -204,13 +204,15 @@ const ABOUT = styled.section`
     align-items: stretch;
     gap: 1rem;
     padding: 1rem;
-    > * {
-      flex-grow: 1;
-    }
-    .social-card {
+    /* border: 1px solid red; */
+    > div > * {
+      /* border: 1px solid blue; */
       display: flex;
       gap: 1rem;
       align-items: center;
+    }
+    .social-card {
+      flex-grow: 1;
       p {
         letter-spacing: 2px;
         font-size: 1.5rem;

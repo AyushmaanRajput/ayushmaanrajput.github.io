@@ -16,7 +16,7 @@ export const Projects = () => {
         <h2>Some of my work</h2>
       </Reveal>
       <Reveal>
-        <div className="projects-container design">
+        {/* <div className="projects-container design">
           <div className="project-card">
             <img src="/FoodDelivery.png" alt="First Design Image" />
             <div className="project-content">
@@ -83,88 +83,162 @@ export const Projects = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </Reveal>
       <Reveal>
         <div className="projects-container development">
-            <div className="project-card col-2">
-              <div className="view-project">
-                <a
-                  href="https://warlike-current-5989-gamma.vercel.app/"
-                  className="project-deployed-link"
-                  target="_blank"
-                  title="Live Website"
-                >
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </a>
-                <a
-                  href="https://github.com/AyushmaanRajput/warlike-current-5989"
-                  target="_blank"
-                  className="project-github-link"
-                  title="Codebase"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a href="#" target="_blank" title="Project Explaination">
-                  <FontAwesomeIcon icon={faPlay} />
-                </a>
-              </div>
-              <div className="overlay"></div>
-              <div className="overlay"></div>
-              <img src="/SwiftPay.png" alt="SwiftPay Dashboard Image" />
-              <div className="project-content">
-                <h4 className="project-title">SwiftPay (Finance Website)</h4>
-                <p className="project-description">
-                  Swiftpay is a dynamic and user-friendly finance website that
-                  revolutionizes the way you manage your financial transactions.
-                </p>
-              </div>
-              <div className="project-tech-stack tags">
-                <div className="tag">React</div>
-                <div className="tag">Redux</div>
-                <div className="tag">CSS (Styled Components)</div>
-              </div>
+          <div className="project-card col-2">
+            <div className="view-project">
+              <a
+                href="https://warlike-current-5989-gamma.vercel.app/"
+                className="project-deployed-link"
+                target="_blank"
+                title="Live Website"
+              >
+                <FontAwesomeIcon icon={faArrowRight} />
+              </a>
+              <a
+                href="https://github.com/AyushmaanRajput/warlike-current-5989"
+                target="_blank"
+                className="project-github-link"
+                title="Codebase"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="#" target="_blank" title="Project Explaination">
+                <FontAwesomeIcon icon={faPlay} />
+              </a>
             </div>
-            <div className="project-card col-2">
-              <img src="/Travelo.png" alt="Travelo Project Image" />
-              <div className="view-project">
-                <a
-                  href="https://stately-cactus-6c6a66.netlify.app/"
-                  className="project-deployed-link"
-                  target="_blank"
-                  title="Live Website"
-                >
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </a>
-                <a
-                  href="https://github.com/AyushmaanRajput/knowing-ladybug-5395"
-                  target="_blank"
-                  className="project-github-link"
-                  title="Codebase"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a href="#" target="_blank" title="Project Explaination">
-                  <FontAwesomeIcon icon={faPlay} />
-                </a>
-              </div>
-              <div className="overlay"></div>
-              <div className="overlay"></div>
-              <div className="project-content">
-                <h4 className="project-title">
-                  Travelo (Travel Agency Website)
-                </h4>
+            <div className="overlay"></div>
+            <div className="overlay"></div>
+            <img src="/SwiftPay.png" alt="SwiftPay Dashboard Image" />
+            <div className="project-content">
+              <h4 className="project-title">SwiftPay (Finance Website)</h4>
+              <p className="project-description">
+                Swiftpay is a dynamic and user-friendly finance website that
+                revolutionizes the way you manage your financial transactions.
+              </p>
+            </div>
+            <div className="project-tech-stack tags">
+              <div className="tag">React</div>
+              <div className="tag">Redux</div>
+              <div className="tag">CSS (Styled Components)</div>
+            </div>
+          </div>
+          <div className="project-card col-2">
+            <img src="/Travelo.png" alt="Travelo Project Image" />
+            <div className="view-project">
+              <a
+                href="https://stately-cactus-6c6a66.netlify.app/"
+                className="project-deployed-link"
+                target="_blank"
+                title="Live Website"
+              >
+                <FontAwesomeIcon icon={faArrowRight} />
+              </a>
+              <a
+                href="https://github.com/AyushmaanRajput/knowing-ladybug-5395"
+                target="_blank"
+                className="project-github-link"
+                title="Codebase"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="#" target="_blank" title="Project Explaination">
+                <FontAwesomeIcon icon={faPlay} />
+              </a>
+            </div>
+            <div className="overlay"></div>
+            <div className="overlay"></div>
+            <div className="project-content">
+              <h4 className="project-title">Travelo (Travel Agency Website)</h4>
 
-                <p className="project-description">
-                  Your gateway to hassle-free travel planning and bookings.
-                </p>
-              </div>
-              <div className="project-tech-stack tags">
-                <div className="tag">HTML</div>
-                <div className="tag">CSS</div>
-                <div className="tag">Javascript</div>
-              </div>
+              <p className="project-description">
+                Your gateway to hassle-free travel planning and bookings.
+              </p>
             </div>
+            <div className="project-tech-stack tags">
+              <div className="tag">HTML</div>
+              <div className="tag">CSS</div>
+              <div className="tag">Javascript</div>
+            </div>
+          </div>
+          <div className="project-card col-2">
+            <div className="view-project">
+              <a
+                href="https://warlike-current-5989-gamma.vercel.app/"
+                className="project-deployed-link"
+                target="_blank"
+                title="Live Website"
+              >
+                <FontAwesomeIcon icon={faArrowRight} />
+              </a>
+              <a
+                href="https://github.com/AyushmaanRajput/warlike-current-5989"
+                target="_blank"
+                className="project-github-link"
+                title="Codebase"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="#" target="_blank" title="Project Explaination">
+                <FontAwesomeIcon icon={faPlay} />
+              </a>
+            </div>
+            <div className="overlay"></div>
+            <div className="overlay"></div>
+            <img src="/SwiftPay.png" alt="SwiftPay Dashboard Image" />
+            <div className="project-content">
+              <h4 className="project-title">SwiftPay (Finance Website)</h4>
+              <p className="project-description">
+                Swiftpay is a dynamic and user-friendly finance website that
+                revolutionizes the way you manage your financial transactions.
+              </p>
+            </div>
+            <div className="project-tech-stack tags">
+              <div className="tag">React</div>
+              <div className="tag">Redux</div>
+              <div className="tag">CSS (Styled Components)</div>
+            </div>
+          </div>
+          <div className="project-card col-2">
+            <img src="/Travelo.png" alt="Travelo Project Image" />
+            <div className="view-project">
+              <a
+                href="https://stately-cactus-6c6a66.netlify.app/"
+                className="project-deployed-link"
+                target="_blank"
+                title="Live Website"
+              >
+                <FontAwesomeIcon icon={faArrowRight} />
+              </a>
+              <a
+                href="https://github.com/AyushmaanRajput/knowing-ladybug-5395"
+                target="_blank"
+                className="project-github-link"
+                title="Codebase"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="#" target="_blank" title="Project Explaination">
+                <FontAwesomeIcon icon={faPlay} />
+              </a>
+            </div>
+            <div className="overlay"></div>
+            <div className="overlay"></div>
+            <div className="project-content">
+              <h4 className="project-title">Travelo (Travel Agency Website)</h4>
+
+              <p className="project-description">
+                Your gateway to hassle-free travel planning and bookings.
+              </p>
+            </div>
+            <div className="project-tech-stack tags">
+              <div className="tag">HTML</div>
+              <div className="tag">CSS</div>
+              <div className="tag">Javascript</div>
+            </div>
+          </div>
 
           {/* <div className="project">
           <img src="/Travelo.png" alt="Travelo Project Image" />

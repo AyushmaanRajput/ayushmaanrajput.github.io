@@ -20,9 +20,9 @@ export const Loader = () => {
         animate="visible"
         exit="exit"
         transition={{
-          duration: 0.5,
+          duration: 0.25,
           ease: "easeOut",
-          delay: 0.5,
+          delay: 0.25,
         }}
         className="first"
       ></motion.div>
@@ -40,9 +40,9 @@ export const Loader = () => {
         animate="visible"
         exit="exit"
         transition={{
-          duration: 0.5,
+          duration: 0.25,
           ease: "easeOut",
-          delay: 1,
+          delay: 0.5,
         }}
         className="second"
       ></motion.div>
@@ -60,9 +60,9 @@ export const Loader = () => {
         animate="visible"
         exit="exit"
         transition={{
-          duration: 0.5,
+          duration: 0.25,
           ease: "easeOut",
-          delay: 1.5,
+          delay: 0.75,
         }}
         className="third"
       ></motion.div>
@@ -80,9 +80,9 @@ export const Loader = () => {
         animate="visible"
         exit="exit"
         transition={{
-          duration: 0.5,
+          duration: 0.25,
           ease: "easeOut",
-          delay: 2,
+          delay: 1,
         }}
         className="fourth"
       ></motion.div>
@@ -100,9 +100,9 @@ export const Loader = () => {
         animate="visible"
         exit="exit"
         transition={{
-          duration: 0.5,
+          duration: 0.25,
           ease: "easeOut",
-          delay: 2.5,
+          delay: 1.25,
         }}
         className="fifth"
       ></motion.div>
@@ -116,7 +116,7 @@ export const Loader = () => {
             // scale: 1,
             opacity: 1,
           },
-          exit: { opacity: 0, transition: { duration: 0, delay: 3.5 } },
+          exit: { opacity: 0, transition: { duration: 0.25 } },
         }}
         initial="hidden"
         animate="visible"
@@ -124,7 +124,7 @@ export const Loader = () => {
         transition={{
           duration: 1,
           ease: "easeOut",
-          delay: 3,
+          delay: 1.5,
         }}
         className="overlap"
       >
@@ -143,9 +143,9 @@ export const Loader = () => {
             initial="hidden"
             animate="visible"
             transition={{
-              duration: 0.5,
+              duration: 0.25,
               ease: "easeOut",
-              delay: 4,
+              delay: 1.75,
             }}
           >
             Developer
@@ -164,9 +164,9 @@ export const Loader = () => {
             initial="hidden"
             animate="visible"
             transition={{
-              duration: 0.5,
+              duration: 0.25,
               ease: "easeOut",
-              delay: 4.5,
+              delay: 2,
             }}
           >
             Designer
@@ -185,9 +185,9 @@ export const Loader = () => {
             initial="hidden"
             animate="visible"
             transition={{
-              duration: 0.5,
+              duration: 0.25,
               ease: "easeOut",
-              delay: 5,
+              delay: 2.25,
             }}
           >
             Creator
@@ -233,7 +233,7 @@ const LOADER = styled.section`
     > h1 {
       &:nth-of-type(1),
       &:nth-of-type(3) {
-        color:transparent;
+        color: transparent;
         -webkit-text-stroke: 1px var(--text); /* Outline color and width for WebKit (Safari, Chrome) */
         text-stroke: 1px var(--text);
       }

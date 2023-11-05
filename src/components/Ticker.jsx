@@ -16,11 +16,11 @@ export function JobsTicker() {
   return (
     <>
       <JOBSTICKER>
-        {/* <Reveal>
+        {/* 
           <h2>I can <i>*</i>do<i>*</i></h2>
         </Reveal> */}
-        <Ticker duration={60} className="container">
-          <Reveal>
+        <Reveal>
+          <Ticker duration={60} className="container">
             <JOBCARD>
               <FontAwesomeIcon
                 icon={faGlobe}
@@ -28,14 +28,12 @@ export function JobsTicker() {
               ></FontAwesomeIcon>
               WEB DEVELOPMENT
             </JOBCARD>
-          </Reveal>
-          <Reveal>
+
             <JOBCARD>
               <FontAwesomeIcon icon={faCrop} className="icon"></FontAwesomeIcon>
               WEB DESIGN
             </JOBCARD>
-          </Reveal>
-          <Reveal>
+
             <JOBCARD>
               <FontAwesomeIcon
                 icon={faLayerGroup}
@@ -43,8 +41,7 @@ export function JobsTicker() {
               ></FontAwesomeIcon>
               PROTOTYPING
             </JOBCARD>
-          </Reveal>
-          <Reveal>
+
             <JOBCARD>
               <FontAwesomeIcon
                 icon={faImage}
@@ -52,8 +49,7 @@ export function JobsTicker() {
               ></FontAwesomeIcon>
               WIREFRAMING
             </JOBCARD>
-          </Reveal>
-          <Reveal>
+
             <JOBCARD>
               <FontAwesomeIcon
                 icon={faMobileScreenButton}
@@ -61,8 +57,7 @@ export function JobsTicker() {
               ></FontAwesomeIcon>
               RESPONSIVE DESIGN
             </JOBCARD>
-          </Reveal>
-          <Reveal>
+
             <JOBCARD>
               <FontAwesomeIcon
                 icon={faWandMagicSparkles}
@@ -70,8 +65,8 @@ export function JobsTicker() {
               ></FontAwesomeIcon>
               USER EXPERIENCE
             </JOBCARD>
-          </Reveal>
-        </Ticker>
+          </Ticker>
+        </Reveal>
       </JOBSTICKER>
     </>
   );
@@ -79,7 +74,7 @@ export function JobsTicker() {
 
 const JOBSTICKER = styled.div`
   background-color: transparent !important;
-  padding: 1rem 0; 
+  padding: 1rem 0;
 `;
 
 const JOBCARD = styled.div`

@@ -41,6 +41,18 @@ function App() {
         </>
       )}
     </>
+
+    // <>
+    //   <Navbar />
+    //   <CONTAINER className="App">
+    //     <Home />
+    //     <JobsTicker></JobsTicker>
+    //     <About />
+    //     <Projects />
+    //     <Contact />
+    //     <Stats />
+    //   </CONTAINER>
+    // </>
   );
 }
 

@@ -40,15 +40,15 @@ export const Stats = () => {
               username="AyushmaanRajput"
               transformData={selectLastHalfYear}
               className="react-activity-calendar"
-              colorScheme="dark"
+              colorScheme="light"
               fontSize={16}
               blockSize={20}
               blockMargin={10}
               blockRadius={4}
               renderBlock={handleRender}
               theme={{
-                light: ["#F7E5D2", "#EBC296", "#DFA464", "#D7862F", "#B46D20"],
-                dark: ["#304033", "#10611E", "#1C9030", "#25AF3C", "#69DB7C"],
+                light: ["#3f3f3f", "#EBC296", "#DFA464", "#D7862F", "#B46D20"],
+                dark: ["#3f3f3f", "#10611E", "#1C9030", "#25AF3C", "#69DB7C"],
               }}
             />
           </div>
@@ -60,7 +60,7 @@ export const Stats = () => {
               <img
                 id="github-streak-stats"
                 className="github-streak-stats"
-                src="https://github-readme-streak-stats.herokuapp.com?user=AyushmaanRajput&theme=slateorange&hide_border=false&border_radius=16&card_width=400"
+                src="https://github-readme-streak-stats.herokuapp.com?user=AyushmaanRajput&theme=vision-friendly-dark&hide_border=false&border_radius=16&card_width=400"
                 alt="GitHub Streak"
               />
             </div>
@@ -70,7 +70,7 @@ export const Stats = () => {
               <img
                 id="github-stats-card"
                 className="github-stats-card"
-                src="https://github-readme-stats.vercel.app/api?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=false&count_private=false&border_radius=16"
+                src="https://github-readme-stats.vercel.app/api?username=AyushmaanRajput&theme=vision-friendly-dark&hide_border=false&include_all_commits=false&count_private=false&border_radius=16"
                 alt="Github Stats Image"
               />
             </div>
@@ -79,7 +79,7 @@ export const Stats = () => {
             <img
               id="github-top-langs"
               className="github-top-langs"
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmaanRajput&theme=slateorange&hide_border=false&include_all_commits=true&count_private=true&border_radius=16"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmaanRajput&theme=vision-friendly-dark&hide_border=false&include_all_commits=true&count_private=true&border_radius=16"
             />
           </div>
         </div>

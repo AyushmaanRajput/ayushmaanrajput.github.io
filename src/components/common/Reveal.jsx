@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-export const Reveal = ({ children, width = "auto" }) => {
+export const Reveal = ({
+  children,
+  width = "auto",
+  delay = 1,
+  className = "",
+}) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -17,15 +22,17 @@ export const Reveal = ({ children, width = "auto" }) => {
   }, [isInView]);
 
   return (
-    <REVEAL ref={ref} width={width}>
+    <REVEAL ref={ref} width={width} className={className}>
       <motion.div
         variants={{
           hidden: {
             opacity: 0,
+            // x: -150,
             y: 150,
           },
           visible: {
             opacity: 1,
+            // x: 0,
             y: 0,
           },
         }}
@@ -33,7 +40,7 @@ export const Reveal = ({ children, width = "auto" }) => {
         animate={mainControls}
         transition={{
           duration: 1,
-          delay: 1,
+          delay: delay,
         }}
       >
         {children}

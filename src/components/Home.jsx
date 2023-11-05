@@ -44,7 +44,7 @@ export const Home = () => {
                 id="resume-button-2"
                 download
               >
-                <Button>
+                <Button id='resume-link-2'>
                   <FontAwesomeIcon
                     icon={faDownload}
                     className="icon"
@@ -121,7 +121,7 @@ const HOME = styled.section`
     }
   }
   .home-img-container {
-    margin-top:-5rem;
+    margin-top: -5rem;
     display: flex;
     position: relative;
     display: flex;
@@ -161,5 +161,22 @@ const HOME = styled.section`
       z-index: 3;
       border-radius: 1rem;
     }
+  }
+  &::after {
+    font-family: "Montserrat", serif;
+    letter-spacing: 4px;
+    content: "Ayushmaan";
+    position: absolute;
+    top:60%;
+    right: -50%;
+    opacity: 0.3;
+    transform: translateY(-50%) rotate(90deg);
+    /* background-color: red; */
+    color: #3f3f3f !important;
+    /* -webkit-text-stroke: 2px var(--secondary); */
+    font-weight: 900;
+    /* text-stroke: 2px var(--secondary); */
+    font-size: 6.5rem;
+    background-blend-mode: hard-light;
   }
 `;
