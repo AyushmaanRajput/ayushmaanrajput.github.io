@@ -184,7 +184,7 @@ const OriginalNav = () => {
             >
               <Button id="resume-link-1">
                 <FontAwesomeIcon icon={faDownload} className="icon" />
-                Resume
+                Resume Button
               </Button>
             </a>
           </li>
