@@ -24,35 +24,35 @@ function App() {
   };
 
   return (
-    <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          <Navbar />
-          <CONTAINER className="App">
-            <Home />
-            <JobsTicker></JobsTicker>
-            <About />
-            <Projects />
-            <Contact />
-            <Stats />
-          </CONTAINER>
-        </>
-      )}
-    </>
-
     // <>
-    //   <Navbar />
-    //   <CONTAINER className="App">
-    //     <Home />
-    //     <JobsTicker></JobsTicker>
-    //     <About />
-    //     <Projects />
-    //     <Contact />
-    //     <Stats />
-    //   </CONTAINER>
+    //   {loading ? (
+    //     <Loader />
+    //   ) : (
+    //     <>
+    //       <Navbar />
+    //       <CONTAINER className="App">
+    //         <Home />
+    //         <JobsTicker></JobsTicker>
+    //         <About />
+    //         <Projects />
+    //         <Contact />
+    //         <Stats />
+    //       </CONTAINER>
+    //     </>
+    //   )}
     // </>
+
+    <>
+      <Navbar />
+      <CONTAINER className="App">
+        <Home />
+        <JobsTicker></JobsTicker>
+        <About />
+        <Projects />
+        <Contact />
+        <Stats />
+      </CONTAINER>
+    </>
   );
 }
 
