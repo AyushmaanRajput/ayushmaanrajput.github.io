@@ -1,6 +1,5 @@
 import {
   faGithub,
-  faGithubAlt,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";

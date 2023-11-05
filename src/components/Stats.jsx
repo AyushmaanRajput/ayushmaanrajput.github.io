@@ -21,7 +21,7 @@ export const Stats = () => {
     });
   };
 
-  function handleRender(block, activity) {
+  function handleRender(block) {
     // ReactElement;
     // console.log(activity,block);
     console.log(block.props["data-level"]);
@@ -71,7 +71,7 @@ export const Stats = () => {
                 id="github-stats-card"
                 className="github-stats-card"
                 src="https://github-readme-stats.vercel.app/api?username=AyushmaanRajput&theme=vision-friendly-dark&hide_border=false&include_all_commits=false&count_private=false&border_radius=16"
-                alt="Github Stats Image"
+                alt="Github Stats"
               />
             </div>
           </Reveal>
@@ -79,6 +79,7 @@ export const Stats = () => {
             <img
               id="github-top-langs"
               className="github-top-langs"
+              alt="Github Top Language"
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmaanRajput&theme=vision-friendly-dark&hide_border=false&include_all_commits=true&count_private=true&border_radius=16"
             />
           </div>

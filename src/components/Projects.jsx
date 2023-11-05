@@ -2,11 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Reveal } from "./common/Reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faPlay,
-  faVideo,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Projects = () => {
@@ -94,6 +90,7 @@ export const Projects = () => {
                 className="project-deployed-link"
                 target="_blank"
                 title="Live Website"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faArrowRight} />
               </a>
@@ -126,7 +123,7 @@ export const Projects = () => {
             </div>
           </div>
           <div className="project-card col-2">
-            <img src="/Travelo.png" alt="Travelo Project Image" />
+            <img src="/Travelo.png" alt="Travelo Project" />
             <div className="view-project">
               <a
                 href="https://stately-cactus-6c6a66.netlify.app/"
@@ -239,75 +236,6 @@ export const Projects = () => {
               <div className="tag">Javascript</div>
             </div>
           </div>
-
-          {/* <div className="project">
-          <img src="/Travelo.png" alt="Travelo Project Image" />
-          <h4 className="project-title">Travelo (Travel Agency Website)</h4>
-          <h4 className='project-title'>
-            <a
-              href="https://github.com/AyushmaanRajput/knowing-ladybug-5395"
-              target="_blank"
-              className="project-github-link"
-            >
-              Codebase
-            </a>
-          </h4>
-          <h4 className='project-title'>
-            <a
-              href="https://stately-cactus-6c6a66.netlify.app/"
-              className="project-deployed-link"
-              target="_blank"
-            >
-              Live Website
-            </a>
-          </h4>
-          <p className="project-description">
-            Your gateway to hassle-free travel planning and bookings.
-          </p>
-          <div className="project-teckstack tags">
-            <div className="tag">HTML</div>
-            <div className="tag">CSS</div>
-            <div className="tag">Javascript</div>
-          </div>
-          <a href="#">Video</a>
-        </div>
-        <div className="project">
-          <img src="/SwiftPay.png" alt="SwiftPay Dashboard Image" />
-          <h4 className="project-title">
-            Swiftpay (user-friendly finance website)
-          </h4>
-          <h4 className='project-title'>
-            <a
-              href="https://github.com/AyushmaanRajput/warlike-current-5989"
-              target="_blank"
-              className="project-github-link"
-            >
-              Codebase
-            </a>
-          </h4>
-          <h4 className='project-title'>
-            <a
-              href="https://warlike-current-5989-gamma.vercel.app/"
-              className="project-deployed-link"
-              target="_blank"
-            >
-              Live Website
-            </a>
-          </h4>
-          <p className="project-description">
-            Swiftpay is a dynamic and user-friendly finance website that
-            revolutionizes the way you manage your financial transactions. With
-            Swiftpay, you can seamlessly handle subscriptions, send and receive
-            money from your contacts, and witness real-time transaction updates
-            right on your user interface.
-          </p>
-          <div className="project-teckstack tags">
-            <div className="tag">React</div>
-            <div className="tag">Redux</div>
-            <div className="tag">CSS (Styled Components)</div>
-          </div>
-          <a href="#">Video</a>
-        </div> */}
         </div>
       </Reveal>
     </PROJECTS>

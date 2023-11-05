@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Reveal } from "./common/Reveal";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Skills } from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

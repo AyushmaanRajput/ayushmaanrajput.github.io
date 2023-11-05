@@ -7,21 +7,20 @@ import { Contact } from "./components/Contact";
 import { JobsTicker } from "./components/Ticker";
 import { Stats } from "./components/Stats";
 import styled from "styled-components";
-import { useEffect, useState } from "react";
-import { Loader } from "./components/common/Loader";
+// import { Loader } from "./components/common/Loader";
 
 function App() {
-  let [loading, setLoading] = useState(true);
+  // let [setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      handleLoaderComplete();
-    }, 6000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     handleLoaderComplete();
+  //   }, 6000);
+  // }, []);
 
-  const handleLoaderComplete = () => {
-    setLoading(false);
-  };
+  // const handleLoaderComplete = () => {
+  //   setLoading(false);
+  // };
 
   return (
     // <>
