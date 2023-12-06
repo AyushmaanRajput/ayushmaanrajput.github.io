@@ -154,9 +154,12 @@ a {
   transition: all 0.5s ease-in;
   z-index: 1;
   color: var(--text);
+  cursor: pointer;
 }
 a:hover .tooltip {
-  right: 120%;
+  left: 50%;
+  right: auto;
+  top: -100%;
   opacity: 1;
 }
 
@@ -164,11 +167,12 @@ a:hover .tooltip {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   position: absolute !important;
-  right: 170%;
-  top: 50%;
+  right: auto;
+  top: -50%;
+  left: 50%;
   /* transform: translate(0, -70%); */
   transform: translateY(-70%);
-  transform: translateX();
+  transform: translateX(-50%);
   font-size: 0.9rem;
   padding: 0.25rem 0.5rem;
   background-color: var(--primary);
@@ -249,4 +253,30 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  :root {
+    --h1: 3rem;
+    --h2: 2.25rem;
+    --h3: 1.5rem;
+    --p: 0.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  :root {
+    --h1: 2.5rem;
+    --h2: 2rem;
+    --h3: 1.25rem;
+    --p: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --h1: 1.5rem;
+    --h2: 1.2rem;
+    --h3: 1rem;
+    --p: 0.7rem;
+  }
 }

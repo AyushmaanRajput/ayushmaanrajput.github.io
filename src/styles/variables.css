@@ -1,8 +1,8 @@
 :root {
   --text: #ffffff;
   --background: #2b2b2b;
-  --background-light:#373737;
-  --background-lightest:#414141;
+  --background-light: #373737;
+  --background-lightest: #414141;
   --primary: #dfa464;
   --secondary: #c0c0c0;
   --accent: #ab7c49;
@@ -16,4 +16,30 @@
   --p: 0.9rem;
   --link: 0.85rem;
   --buttom: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  :root {
+    --h1: 3rem;
+    --h2: 2.25rem;
+    --h3: 1.5rem;
+    --p: 0.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  :root {
+    --h1: 2.5rem;
+    --h2: 2rem;
+    --h3: 1.25rem;
+    --p: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --h1: 1.5rem;
+    --h2: 1.2rem;
+    --h3: 1rem;
+    --p: 0.7rem;
+  }
 }

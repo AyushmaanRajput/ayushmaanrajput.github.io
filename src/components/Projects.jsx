@@ -11,8 +11,8 @@ export const Projects = () => {
       <Reveal>
         <h2>Some of my work</h2>
       </Reveal>
-      <Reveal>
-        {/* <div className="projects-container design">
+      {/* <Reveal>
+        <div className="projects-container design">
           <div className="project-card">
             <img src="/FoodDelivery.png" alt="First Design Image" />
             <div className="project-content">
@@ -79,8 +79,8 @@ export const Projects = () => {
               </a>
             </div>
           </div>
-        </div> */}
-      </Reveal>
+        </div> 
+      </Reveal> */}
       <Reveal>
         <div className="projects-container development">
           <div className="project-card col-2">
@@ -163,7 +163,7 @@ export const Projects = () => {
           <div className="project-card col-2">
             <div className="view-project">
               <a
-                href="https://warlike-current-5989-gamma.vercel.app/"
+                href="https://concerned-picture-9849-frontend.vercel.app/"
                 className="project-deployed-link"
                 target="_blank"
                 title="Live Website"
@@ -171,7 +171,7 @@ export const Projects = () => {
                 <FontAwesomeIcon icon={faArrowRight} />
               </a>
               <a
-                href="https://github.com/AyushmaanRajput/warlike-current-5989"
+                href="https://github.com/AyushmaanRajput/concerned-picture-9849"
                 target="_blank"
                 className="project-github-link"
                 title="Codebase"
@@ -184,25 +184,33 @@ export const Projects = () => {
             </div>
             <div className="overlay"></div>
             <div className="overlay"></div>
-            <img src="/SwiftPay.png" alt="SwiftPay Dashboard Image" />
+            <img
+              src="https://camo.githubusercontent.com/ab9a19d0de34db1dfe90409e4e509ceaf0f05370110e5aaa23c2d002528d764d/68747470733a2f2f6465762d746f2d75706c6f6164732e73332e616d617a6f6e6177732e636f6d2f75706c6f6164732f61727469636c65732f6b63353668756b306261316d6c61636b686331732e706e67"
+              alt="Recipe Hub Feed"
+            />
             <div className="project-content">
-              <h4 className="project-title">SwiftPay (Finance Website)</h4>
+              <h4 className="project-title">
+                RecipeHub (Recipe Sharing Platform)
+              </h4>
               <p className="project-description">
-                Swiftpay is a dynamic and user-friendly finance website that
-                revolutionizes the way you manage your financial transactions.
+                RecipeHub is a user-friendly culinary hub that offers a wealth
+                of features for food enthusiasts of all skill levels.
               </p>
             </div>
             <div className="project-tech-stack tags">
               <div className="tag">React</div>
               <div className="tag">Redux</div>
-              <div className="tag">CSS (Styled Components)</div>
+              <div className="tag">Chakra UI</div>
+              <div className="tag">Express</div>
+              <div className="tag">Mongoose</div>
+              <div className="tag">Socket.io</div>
             </div>
           </div>
           <div className="project-card col-2">
-            <img src="/Travelo.png" alt="Travelo Project Image" />
+            <img src="./Intellibot.png" alt="Intellibot" />
             <div className="view-project">
               <a
-                href="https://stately-cactus-6c6a66.netlify.app/"
+                href="https://intellibotfrontend.vercel.app/"
                 className="project-deployed-link"
                 target="_blank"
                 title="Live Website"
@@ -210,7 +218,7 @@ export const Projects = () => {
                 <FontAwesomeIcon icon={faArrowRight} />
               </a>
               <a
-                href="https://github.com/AyushmaanRajput/knowing-ladybug-5395"
+                href="https://github.com/AyushmaanRajput/Intellibot-Hackathon"
                 target="_blank"
                 className="project-github-link"
                 title="Codebase"
@@ -224,16 +232,20 @@ export const Projects = () => {
             <div className="overlay"></div>
             <div className="overlay"></div>
             <div className="project-content">
-              <h4 className="project-title">Travelo (Travel Agency Website)</h4>
+              <h4 className="project-title">
+                Intellibot (Interview Simulator with OpenAI)
+              </h4>
 
               <p className="project-description">
-                Your gateway to hassle-free travel planning and bookings.
+                A Interview simulator powered by OpenAI's API.
               </p>
             </div>
             <div className="project-tech-stack tags">
-              <div className="tag">HTML</div>
-              <div className="tag">CSS</div>
-              <div className="tag">Javascript</div>
+              <div className="tag">React(Typescript)</div>
+              <div className="tag">Tailwind</div>
+              <div className="tag">Express</div>
+              <div className="tag">Mongoose</div>
+              <div className="tag">OpenAI</div>
             </div>
           </div>
         </div>
@@ -261,11 +273,12 @@ const PROJECTS = styled.section`
   }
   .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding-inline: 1rem;
     margin-bottom: 4rem;
     .project-card.col-2 {
-      grid-column: span 2;
+      grid-column: span 1;
       height: 500px;
       img {
         object-position: bottom;
@@ -278,6 +291,7 @@ const PROJECTS = styled.section`
       overflow: hidden;
       background-blend-mode: hard-light;
       transition: all 0.5s ease-in;
+
       &:hover .overlay {
         top: 0%;
       }
@@ -292,6 +306,8 @@ const PROJECTS = styled.section`
         /* width:250%; */
         /* height:150%; */
         object-fit: cover;
+        width: 100%;
+        height: 150%;
       }
       .project-content {
         position: absolute;
@@ -327,6 +343,8 @@ const PROJECTS = styled.section`
         left: 1rem;
         z-index: 15;
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 1rem;
         .tag {
           background-color: var(--background-lightest);
@@ -425,5 +443,114 @@ const PROJECTS = styled.section`
     .project-card:first-of-type {
       border: 4px solid var(--primary);
     }
+  }
+  @media screen and (max-width: 1100px) {
+    h2 {
+      margin-bottom: 3rem;
+    }
+    hr {
+      margin-block: 1.5rem;
+      border: none;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding-inline: 1rem;
+      margin-bottom: 4rem;
+      .project-card.col-2 {
+        grid-column: span 1;
+        height: 500px;
+        img {
+          object-position: bottom;
+        }
+      }
+      .project-card {
+        img {
+          height: 120%;
+          object-position: top;
+        }
+        .project-content {
+          z-index: 8;
+          p {
+            max-width: 500px;
+          }
+        }
+        .tags {
+          z-index: 9;
+        }
+        .overlay {
+          z-index: 8;
+        }
+        .view-project {
+          opacity: 1;
+          /* display: none; */
+          z-index: 9;
+          a {
+            padding: 1.25rem;
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+      }
+      .project-card:first-of-type {
+        border: 3px solid var(--primary);
+      }
+    }
+  }
+  @media screen and (max-width: 850px) {
+    h2 {
+      margin-bottom: 2rem;
+    }
+    .projects-container {
+      gap: 1rem;
+      margin-bottom: 2rem;
+      .project-card.col-2 {
+        height: 400px;
+        img {
+          object-position: top;
+        }
+      }
+      .project-card {
+        img {
+          height: 120%;
+          object-position: top;
+        }
+        .project-content {
+          z-index: 8;
+          p {
+            max-width: 300px;
+            font-size: var(--p);
+          }
+        }
+        .tags {
+          z-index: 9;
+        }
+        .overlay {
+          z-index: 8;
+        }
+        .view-project {
+          z-index: 9;
+          gap: 1rem;
+          a {
+            padding: 1rem;
+            width: 3rem;
+            height: 3rem;
+          }
+          a:last-of-type {
+            > * {
+              margin-left: 0rem;
+            }
+          }
+        }
+      }
+      .project-card:first-of-type {
+        border: 3px solid var(--primary);
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
   }
 `;

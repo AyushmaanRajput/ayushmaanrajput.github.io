@@ -104,7 +104,6 @@ export const Navbar = () => {
 const NAV = styled.nav`
   width: min(95rem, 100%);
   margin-inline: auto;
-
   padding: 1rem;
 `;
 
@@ -114,10 +113,11 @@ const Sidebar = styled.div`
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 95%;
   background: var(--background-light);
+  opacity: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 10;
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -184,7 +184,7 @@ const OriginalNav = () => {
             >
               <Button id="resume-button-1">
                 <FontAwesomeIcon icon={faDownload} className="icon" />
-                Resume Button
+                Resume
               </Button>
             </a>
           </li>
@@ -198,6 +198,8 @@ const ORIGINALNAV = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 1000;
   ul {
     display: flex;
     gap: 1rem;

@@ -93,4 +93,11 @@ const JOBCARD = styled.div`
     border: 1px solid var(--primary);
     box-shadow: 0 1px 6px var(--primary), 0 2px 12px var(--primary);
   }
+  @media screen and (max-width: 700px) {
+    padding: 0.5rem 1rem;
+    font-size:0.8rem;
+  }
+  @media screen and (max-width: 400px) {
+    padding: 0.25rem 0.67rem;
+  }
 `;

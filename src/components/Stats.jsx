@@ -41,8 +41,8 @@ export const Stats = () => {
               transformData={selectLastHalfYear}
               className="react-activity-calendar"
               colorScheme="light"
-              fontSize={16}
-              blockSize={20}
+              fontSize={14}
+              blockSize={16}
               blockMargin={10}
               blockRadius={4}
               renderBlock={handleRender}
@@ -114,6 +114,33 @@ const STATS = styled.section`
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    padding-block: 3rem;
+    .github-stats {
+      padding-block: 1rem;
+      gap: 1rem;
+      .calender-container {
+        display: flex;
+        gap: 1rem;
+      }
+      .react-activity-calendar {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    padding-block: 2rem;
+    .other-stats > div {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    padding-block: 1rem;
+    .other-stats > div {
+      width: 90%;
     }
   }
 `;

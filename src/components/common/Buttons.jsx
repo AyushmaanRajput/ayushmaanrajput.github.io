@@ -59,4 +59,12 @@ const BUTTON = styled.button`
   &:hover::before {
     width: 200%;
   }
+  @media screen and (max-width: 1100px) {
+    letter-spacing: 1px;
+    padding: 0.5rem 1.25rem;
+  }
+  @media screen and (max-width: 700px) {
+    letter-spacing: 0.5px;
+    padding: 0.35rem 1rem;
+  }
 `;

@@ -97,4 +97,38 @@ const SKILLS = styled.section`
       }
     }
   }
+  @media screen and (max-width: 1200px) {
+    padding: 1rem;
+    .skills-row {
+      width: 90%;
+      .skills-card {
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .skills-row {
+      width: 100%;
+      .skills-card {
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .skills-row {
+      .skills-card {
+        border-radius: 0.25rem;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
 `;

@@ -238,4 +238,132 @@ const ABOUT = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    padding-block: 4rem;
+    padding-inline: 1rem;
+    h2 {
+      margin-bottom: 3rem;
+    }
+    .about-content {
+      grid-template-columns: repeat(2, 1fr) min-content;
+      gap: 1rem;
+      .about-card {
+        gap: 2rem;
+        padding: 2rem 1rem;
+        /* width: 70%; */
+        #user-detail-intro {
+          max-width: auto;
+        }
+        .about-avatar {
+          /* width: 50%; */
+          width: 45%;
+          overflow: hidden;
+          img {
+            aspect-ratio: 1;
+            width: 10vw;
+            height: 10vw;
+            padding: 0.25rem;
+          }
+        }
+        &::after {
+          content: "*";
+          width: 8%;
+          height: 8%;
+        }
+      }
+    }
+    .about-socials {
+      align-items: stretch;
+      justify-content: space-between;
+      > div > * {
+        gap: 0.5rem;
+      }
+      .social-card {
+        flex-grow: 1;
+        p {
+          letter-spacing: 1px;
+          font-size: 1rem;
+        }
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .about-xp {
+      .xp-card {
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    padding-block: 3rem;
+    .about-content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "about about"
+        "xp xp"
+        "skills skills";
+      gap: 1rem;
+      .about-card {
+        gap: 1rem;
+        padding: 1rem;
+        .about-avatar {
+          img {
+            aspect-ratio: 1;
+            width: 100%;
+            height: 100%;
+            padding: 0.25rem;
+          }
+        }
+      }
+    }
+    .about-socials {
+      display: none;
+    }
+    .about-xp {
+      .xp-card {
+        padding: 0.75rem;
+      }
+    }
+  }
+  @media screen and (max-width: 520px) {
+    padding-block: 2rem;
+    .about-xp {
+      flex-direction: column;
+
+      .xp-card {
+        p {
+          color: var(--p);
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    padding-block: 1rem;
+    .about-card {
+      gap: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center !important;
+      #user-detail-intro {
+        max-width: 100% !important;
+        width: 100% !important;
+        text-align: center !important;
+        font-size: var(--p);
+        > h3 {
+          text-align: center !important;
+        }
+      }
+      & > div:nth-of-type(2) {
+        /* flex-grow: 1; */
+        text-align: center !important;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
 `;

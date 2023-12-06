@@ -48,8 +48,8 @@ function App() {
         <JobsTicker></JobsTicker>
         <About />
         <Projects />
-        <Contact />
         <Stats />
+        <Contact />
       </CONTAINER>
     </>
   );
