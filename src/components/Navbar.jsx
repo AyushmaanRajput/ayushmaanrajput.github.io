@@ -32,7 +32,12 @@ export const Navbar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [isSmallScreen]);
-
+  function openHandler() {
+    window.open(
+      "https://drive.google.com/file/d/1QlZihxTfF7OksOziigdv2DguLY_cvK2z/view?usp=sharing",
+      "_blank"
+    );
+  }
   return (
     <NAV id="nav-menu">
       {isSmallScreen && (
@@ -79,13 +84,13 @@ export const Navbar = () => {
             <ul>
               <li>
                 <a
-                  href="/Resume.pdf"
+                  href="/Ayushmaan-Rajput-Resume.pdf"
                   className="nav-link resume"
                   title="Download Resume"
                   download
                   id="resume-button-1"
                 >
-                  <Button>
+                  <Button onClick={openHandler}>
                     <FontAwesomeIcon icon={faDownload} className="icon" />
                     Resume
                   </Button>
@@ -105,6 +110,11 @@ const NAV = styled.nav`
   width: min(95rem, 100%);
   margin-inline: auto;
   padding: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10000000;
+  background-color: var(--background);
 `;
 
 const Sidebar = styled.div`
@@ -137,6 +147,12 @@ const Sidebar = styled.div`
 `;
 
 const OriginalNav = () => {
+  function openHandler() {
+    window.open(
+      "https://drive.google.com/file/d/1QlZihxTfF7OksOziigdv2DguLY_cvK2z/view?usp=sharing",
+      "_blank"
+    );
+  }
   return (
     <ORIGINALNAV>
       <Logo />
@@ -176,13 +192,13 @@ const OriginalNav = () => {
         <ul>
           <li>
             <a
-              href="/Resume.pdf"
+              href="/Ayushmaan-Rajput-Resume.pdf"
               className="nav-link resume"
               title="Download Resume"
               download
               id="resume-link-1"
             >
-              <Button id="resume-button-1">
+              <Button id="resume-button-1" onClick={openHandler}>
                 <FontAwesomeIcon icon={faDownload} className="icon" />
                 Resume
               </Button>
@@ -198,7 +214,7 @@ const ORIGINALNAV = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: sticky;
   z-index: 1000;
   ul {
     display: flex;

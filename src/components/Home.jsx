@@ -10,6 +10,12 @@ import { Reveal } from "./common/Reveal";
 import styled from "styled-components";
 
 export const Home = () => {
+  function openHandler() {
+    window.open(
+      "https://drive.google.com/file/d/1QlZihxTfF7OksOziigdv2DguLY_cvK2z/view?usp=sharing",
+      "_blank"
+    );
+  }
   return (
     <Reveal>
       <HOME id="home">
@@ -39,12 +45,12 @@ export const Home = () => {
           <Reveal>
             <div className="buttons-container">
               <a
-                href="/Resume.pdf"
+                href="/Ayushmaan-Rajput-Resume.pdf"
                 title="Download Resume"
                 id="resume-link-2"
                 download
               >
-                <Button id="resume-button-2">
+                <Button id="resume-button-2" onClick={openHandler}>
                   <FontAwesomeIcon
                     icon={faDownload}
                     className="icon"

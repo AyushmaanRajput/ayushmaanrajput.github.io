@@ -54,6 +54,7 @@ body {
   background-color: var(--background);
   overflow-x: hidden;
   color: var(--text);
+  scroll-behavior: smooth !important;
 }
 
 /* A elements that don't have a class get default styles */
