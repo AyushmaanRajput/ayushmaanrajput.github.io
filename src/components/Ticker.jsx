@@ -75,6 +75,8 @@ export function JobsTicker() {
 const JOBSTICKER = styled.div`
   background-color: transparent !important;
   padding: 1rem 0;
+  /* border-left: 1px solid var(--background-light);
+  box-shadow: inset 10px 0 20px 40px var(--background); */
 `;
 
 const JOBCARD = styled.div`
@@ -95,7 +97,7 @@ const JOBCARD = styled.div`
   }
   @media screen and (max-width: 700px) {
     padding: 0.5rem 1rem;
-    font-size:0.8rem;
+    font-size: 0.8rem;
   }
   @media screen and (max-width: 400px) {
     padding: 0.25rem 0.67rem;
